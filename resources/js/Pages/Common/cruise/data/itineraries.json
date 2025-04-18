@@ -1,0 +1,286 @@
+{
+  "itineraries": [
+    {
+      "id": "rc1",
+      "cruiseId": "rc1",
+      "title": "7 Night Caribbean Cruise",
+      "cruiseLine": "Royal Caribbean",
+      "ship": "Symphony of the Seas",
+      "departing": "Miami, Florida",
+      "duration": "7 Nights",
+      "ports": [
+        {
+          "day": 1,
+          "date": "January 5, 2025",
+          "port": "Miami, Florida",
+          "arrival": "4:00 PM",
+          "departure": "5:00 PM",
+          "activities": ["Embarkation", "Welcome Aboard Show", "Dinner at Main Dining Room"]
+        },
+        {
+          "day": 2,
+          "date": "January 6, 2025",
+          "port": "At Sea",
+          "activities": ["Poolside Activities", "Spa Treatments", "Broadway Show", "Casino Night"]
+        },
+        {
+          "day": 3,
+          "date": "January 7, 2025",
+          "port": "Cozumel, Mexico",
+          "arrival": "8:00 AM",
+          "departure": "5:00 PM",
+          "activities": ["Mayan Ruins Tour", "Snorkeling", "Beach Break", "Shopping"]
+        },
+        {
+          "day": 4,
+          "date": "January 8, 2025",
+          "port": "George Town, Grand Cayman",
+          "arrival": "7:00 AM",
+          "departure": "4:00 PM",
+          "activities": ["Stingray City", "Seven Mile Beach", "Helicopter Tour"]
+        },
+        {
+          "day": 5,
+          "date": "January 9, 2025",
+          "port": "Falmouth, Jamaica",
+          "arrival": "8:00 AM",
+          "departure": "5:00 PM",
+          "activities": ["Dunn's River Falls", "Bamboo Beach Club", "Jamaican Cooking Class"]
+        },
+        {
+          "day": 6,
+          "date": "January 10, 2025",
+          "port": "At Sea",
+          "activities": ["Rock Climbing", "Ice Skating Show", "Wine Tasting", "Comedy Show"]
+        },
+        {
+          "day": 7,
+          "date": "January 11, 2025",
+          "port": "At Sea",
+          "activities": ["Bingo", "Aqua Theater Show", "Farewell Dinner", "Dance Party"]
+        }
+      ],
+      "pricing": {
+        "interior": 799,
+        "oceanView": 999,
+        "balcony": 1299,
+        "suite": 1999
+      },
+      "inclusions": [
+        "All meals in main dining rooms",
+        "Entertainment and shows",
+        "Fitness center access",
+        "Kids club",
+        "Pool and water slides",
+        "24-hour room service",
+        "Port taxes and fees"
+      ],
+      "highlights": [
+        "World's largest cruise ship",
+        "Central Park with live plants",
+        "Ultimate Abyss slide",
+        "Broadway shows",
+        "Royal Promenade",
+        "Multiple pools and hot tubs",
+        "State-of-the-art fitness center"
+      ]
+    },
+    {
+      "id": "ncl1",
+      "cruiseId": "ncl1",
+      "title": "7 Night Alaska Cruise",
+      "cruiseLine": "Norwegian Cruise Line",
+      "ship": "Norwegian Bliss",
+      "departing": "Seattle, Washington",
+      "duration": "7 Nights",
+      "ports": [
+        {
+          "day": 1,
+          "date": "May 15, 2025",
+          "port": "Seattle, Washington",
+          "arrival": "3:00 PM",
+          "departure": "4:00 PM",
+          "activities": ["Embarkation", "Welcome Aboard Party", "Sail Away Celebration"]
+        },
+        {
+          "day": 2,
+          "date": "May 16, 2025",
+          "port": "At Sea",
+          "activities": ["Spa Day", "Culinary Demonstration", "Evening Entertainment"]
+        },
+        {
+          "day": 3,
+          "date": "May 17, 2025",
+          "port": "Juneau, Alaska",
+          "arrival": "2:00 PM",
+          "departure": "10:00 PM",
+          "activities": ["Glacier Viewing", "Whale Watching", "Dog Sledding"]
+        },
+        {
+          "day": 4,
+          "date": "May 18, 2025",
+          "port": "Skagway, Alaska",
+          "arrival": "7:00 AM",
+          "departure": "8:00 PM",
+          "activities": ["White Pass Railway", "Gold Rush History Tour", "Hiking"]
+        },
+        {
+          "day": 5,
+          "date": "May 19, 2025",
+          "port": "Glacier Bay",
+          "activities": ["Scenic Cruising", "National Park Rangers Presentation", "Wildlife Viewing"]
+        },
+        {
+          "day": 6,
+          "date": "May 20, 2025",
+          "port": "Ketchikan, Alaska",
+          "arrival": "6:00 AM",
+          "departure": "1:30 PM",
+          "activities": ["Totem Poles Tour", "Fishing", "Rainforest Adventure"]
+        },
+        {
+          "day": 7,
+          "date": "May 21, 2025",
+          "port": "Victoria, British Columbia",
+          "arrival": "8:00 PM",
+          "departure": "11:59 PM",
+          "activities": ["Butchart Gardens", "City Tour", "Evening Tea"]
+        }
+      ],
+      "pricing": {
+        "interior": 899,
+        "oceanView": 1099,
+        "balcony": 1499,
+        "suite": 2499
+      },
+      "inclusions": [
+        "All meals in complimentary dining venues",
+        "Award-winning entertainment",
+        "Fitness center access",
+        "Kids and teens programs",
+        "Observation Lounge access",
+        "Port taxes and fees",
+        "Onboard activities"
+      ],
+      "highlights": [
+        "Glacier viewing",
+        "Wildlife spotting",
+        "Local culture experiences",
+        "Scenic cruising",
+        "Adventure activities",
+        "Luxury spa facilities",
+        "Gourmet dining options"
+      ]
+    },
+    {
+      "id": 3,
+      "cruiseId": 3,
+      "title": "10 Night Alaska Cruise",
+      "cruiseLine": "Celebrity Cruises",
+      "ship": "Celebrity Solstice",
+      "departing": "Vancouver BC, Canada",
+      "duration": "10 Nights",
+      "ports": [
+        {
+          "day": 1,
+          "date": "June 1, 2025",
+          "port": "Vancouver BC, Canada",
+          "arrival": "4:00 PM",
+          "departure": "5:00 PM",
+          "activities": ["Embarkation", "Welcome Show", "Dinner at Main Dining Room"]
+        },
+        {
+          "day": 2,
+          "date": "June 2, 2025",
+          "port": "At Sea",
+          "activities": ["Naturalist Talks", "Spa Treatments", "Broadway Show"]
+        },
+        {
+          "day": 3,
+          "date": "June 3, 2025",
+          "port": "Ketchikan, Alaska",
+          "arrival": "7:00 AM",
+          "departure": "4:00 PM",
+          "activities": ["Totem Pole Park", "Salmon Fishing", "Wildlife Viewing"]
+        },
+        {
+          "day": 4,
+          "date": "June 4, 2025",
+          "port": "Juneau, Alaska",
+          "arrival": "8:00 AM",
+          "departure": "6:00 PM",
+          "activities": ["Mendenhall Glacier", "Whale Watching", "Helicopter Tour"]
+        },
+        {
+          "day": 5,
+          "date": "June 5, 2025",
+          "port": "Skagway, Alaska",
+          "arrival": "7:00 AM",
+          "departure": "5:00 PM",
+          "activities": ["White Pass Railway", "Gold Panning", "Dog Sledding"]
+        },
+        {
+          "day": 6,
+          "date": "June 6, 2025",
+          "port": "Glacier Bay National Park",
+          "arrival": "6:00 AM",
+          "departure": "3:00 PM",
+          "activities": ["Glacier Viewing", "Wildlife Spotting", "Park Ranger Talks"]
+        },
+        {
+          "day": 7,
+          "date": "June 7, 2025",
+          "port": "At Sea",
+          "activities": ["Naturalist Talks", "Spa Day", "Broadway Show"]
+        },
+        {
+          "day": 8,
+          "date": "June 8, 2025",
+          "port": "Hubbard Glacier",
+          "arrival": "8:00 AM",
+          "departure": "12:00 PM",
+          "activities": ["Glacier Viewing", "Wildlife Spotting"]
+        },
+        {
+          "day": 9,
+          "date": "June 9, 2025",
+          "port": "At Sea",
+          "activities": ["Naturalist Talks", "Spa Treatments", "Farewell Dinner"]
+        },
+        {
+          "day": 10,
+          "date": "June 10, 2025",
+          "port": "At Sea",
+          "activities": ["Packing", "Farewell Show", "Dance Party"]
+        },
+        {
+          "day": 11,
+          "date": "June 11, 2025",
+          "port": "Vancouver BC, Canada",
+          "arrival": "6:00 AM",
+          "activities": ["Disembarkation"]
+        }
+      ],
+      "pricing": {
+        "interior": 1299,
+        "oceanView": 1499,
+        "balcony": 1799,
+        "suite": 2999
+      },
+      "inclusions": [
+        "All meals in main dining rooms",
+        "Entertainment",
+        "Fitness center",
+        "Naturalist talks",
+        "Pool access"
+      ],
+      "highlights": [
+        "Glacier viewing",
+        "Wildlife spotting",
+        "Naturalist onboard",
+        "Luxury accommodations",
+        "Fine dining"
+      ]
+    }
+  ]
+} 

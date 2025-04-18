@@ -1,0 +1,129 @@
+{
+    "destinations": [
+      {
+        "id": 1,
+        "name": "Caribbean",
+        "country": "Multiple",
+        "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1664&auto=format&fit=crop",
+        "price": 499,
+        "rating": 4.9,
+        "description": "Crystal clear waters, white sandy beaches, and tropical paradise",
+        "popularPorts": [
+          "Miami, Florida",
+          "Cozumel, Mexico",
+          "George Town, Grand Cayman",
+          "Falmouth, Jamaica"
+        ],
+        "bestTimeToVisit": "December to April",
+        "averageTemp": "75°F - 85°F",
+        "highlights": [
+          "Snorkeling and diving",
+          "Beach activities",
+          "Island hopping",
+          "Water sports"
+        ],
+        "cruiseTypes": ["Family", "Luxury", "Adventure"]
+      },
+      {
+        "id": 2,
+        "name": "Mediterranean",
+        "country": "Multiple",
+        "image": "https://images.unsplash.com/photo-1515859005217-8a1f08870f59?q=80&w=1664&auto=format&fit=crop",
+        "price": 799,
+        "rating": 4.8,
+        "description": "Rich history and stunning coastal views",
+        "popularPorts": [
+          "Barcelona, Spain",
+          "Rome, Italy",
+          "Athens, Greece"
+        ],
+        "bestTimeToVisit": "May to October",
+        "cruiseTypes": ["Cultural", "Luxury", "Romantic"]
+      },
+      {
+        "id": 3,
+        "name": "Alaska",
+        "country": "United States",
+        "image": "https://images.unsplash.com/photo-1531176175280-33e81422832a?q=80&w=1664&auto=format&fit=crop",
+        "price": 899,
+        "rating": 4.7,
+        "description": "Majestic glaciers, wildlife viewing, and stunning natural beauty",
+        "popularPorts": [
+          "Seattle, Washington",
+          "Juneau, Alaska",
+          "Skagway, Alaska",
+          "Ketchikan, Alaska"
+        ],
+        "bestTimeToVisit": "May to September",
+        "averageTemp": "50°F - 70°F",
+        "highlights": [
+          "Glacier viewing",
+          "Whale watching",
+          "Dog sledding",
+          "Native culture"
+        ],
+        "cruiseTypes": ["Adventure", "Nature", "Scenic"]
+      },
+      {
+        "id": 4,
+        "name": "Greek Islands",
+        "country": "Greece",
+        "image": "https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?q=80&w=1664&auto=format&fit=crop",
+        "price": 699,
+        "rating": 4.9,
+        "description": "Ancient ruins and island hopping",
+        "popularPorts": [
+          "Athens, Greece",
+          "Mykonos, Greece",
+          "Santorini, Greece"
+        ],
+        "bestTimeToVisit": "June to September",
+        "cruiseTypes": ["Cultural", "Romantic", "Beach"]
+      },
+      {
+        "id": 5,
+        "name": "Norwegian Fjords",
+        "country": "Norway",
+        "image": "https://images.unsplash.com/photo-1601439678777-b2b3c56fa627?q=80&w=1664&auto=format&fit=crop",
+        "price": 999,
+        "rating": 4.8,
+        "description": "Dramatic landscapes and natural wonders",
+        "popularPorts": [
+          "Bergen, Norway",
+          "Oslo, Norway",
+          "Geiranger, Norway"
+        ],
+        "bestTimeToVisit": "May to August",
+        "cruiseTypes": ["Scenic", "Nature", "Photography"]
+      },
+      {
+        "id": 6,
+        "name": "Japan",
+        "country": "Japan",
+        "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1664&auto=format&fit=crop",
+        "price": 1099,
+        "rating": 4.7,
+        "description": "Ancient traditions meet modern culture",
+        "popularPorts": [
+          "Tokyo, Japan",
+          "Osaka, Japan",
+          "Fukuoka, Japan"
+        ],
+        "bestTimeToVisit": "March to May, September to November",
+        "cruiseTypes": ["Cultural", "Culinary", "Urban"]
+      }
+    ],
+    "categories": [
+      "All",
+      "Cities",
+      "Beach",
+      "Mountains",
+      "Islands",
+      "Historic"
+    ],
+    "filters": {
+      "duration": ["3-5 days", "4-6 days", "5-7 days", "7-10 days"],
+      "season": ["All Year", "Summer", "Winter", "Spring", "Dry Season"],
+      "tags": ["Urban", "Nature", "Beach", "Culture", "Adventure", "Food", "Hiking", "Romance", "Scenic", "Tropical", "Winter Sports"]
+    }
+  }

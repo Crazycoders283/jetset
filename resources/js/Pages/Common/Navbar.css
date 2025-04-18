@@ -1,0 +1,451 @@
+    .navbar {
+  height: 71px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar.transparent {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.navbar.scrolled {
+  background-color: rgba(45, 45, 50, 0.6);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo span {
+  color: white;
+  font-size: 18px;
+}
+
+.navbar-center {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  transition: color 0.3s ease;
+  padding: 6px 0;
+}
+
+.nav-link:hover {
+  color: #d1d5db;
+}
+
+.nav-link.active {
+  color: white;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Add enhanced styling for transparent navbar links */
+.navbar.transparent .nav-link {
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.navbar.transparent .logo svg,
+.navbar.transparent .logo span {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.login-button {
+  color: white;
+  background: linear-gradient(135deg, #036cca, #0d99ff);
+  border: none;
+  font-size: 0.938rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.625rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(13, 153, 255, 0.2);
+  z-index: 1;
+}
+
+.login-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0254a3, #007acc);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.login-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(13, 153, 255, 0.3);
+  color: white;
+}
+
+.login-button:hover::before {
+  opacity: 1;
+}
+
+.login-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(13, 153, 255, 0.2);
+}
+
+.navbar.transparent .login-button {
+  backdrop-filter: blur(4px);
+  background: rgba(13, 153, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.navbar.transparent .login-button:hover {
+  background: rgba(13, 153, 255, 0.9);
+}
+
+.profile-container {
+  position: relative;
+}
+
+.profile-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.profile-icon svg {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  margin-top: 12px;
+  min-width: 200px;
+  overflow: hidden;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.profile-dropdown button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 14px 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #1a1a1a;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.profile-dropdown button:hover {
+  background-color: #f3f4f6;
+}
+
+.profile-dropdown svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Mobile menu button */
+.mobile-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.mobile-menu-button svg {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  position: fixed;
+  top: 71px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(45, 45, 50, 0.95);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  z-index: 40;
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow-y: auto;
+  box-shadow: -5px 0 25px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+.mobile-menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px 0;
+}
+
+.mobile-nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mobile-nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(4px);
+}
+
+.mobile-nav-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+.mobile-login-button,
+.mobile-profile-button,
+.mobile-logout-button {
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.mobile-login-button {
+  background: linear-gradient(135deg, #036cca, #0d99ff);
+  color: white;
+  border: none;
+}
+
+.mobile-profile-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mobile-logout-button {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: #ff4444;
+  border: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+.mobile-login-button:hover,
+.mobile-profile-button:hover,
+.mobile-logout-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile menu button enhancements */
+.mobile-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  position: relative;
+  z-index: 50;
+}
+
+.mobile-menu-button svg {
+  width: 28px;
+  height: 28px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.mobile-menu-button:hover svg {
+  transform: scale(1.1);
+}
+
+/* Content spacing for mobile */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 16px;
+  }
+
+  .navbar.transparent {
+    background-color: rgba(45, 45, 50, 0.6);
+  }
+
+  .navbar.scrolled {
+    background-color: rgba(45, 45, 50, 0.9);
+  }
+
+  .navbar-center {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: block;
+  }
+
+  .profile-dropdown {
+    right: 16px;
+  }
+
+  /* Ensure content flows properly below navbar */
+  main {
+    margin-top: 71px;
+    padding-top: 20px;
+  }
+
+  /* Improve mobile menu visibility */
+  .mobile-menu {
+    padding: 0;
+  }
+
+  .mobile-menu-links {
+    padding: 20px;
+  }
+
+  .mobile-nav-link {
+    font-size: 16px;
+    padding: 16px;
+  }
+
+  .mobile-login-button,
+  .mobile-profile-button,
+  .mobile-logout-button {
+    margin: 20px 16px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .navbar {
+    height: 60px;
+  }
+
+  .mobile-menu {
+    top: 60px;
+  }
+
+  .logo span {
+    font-size: 16px;
+  }
+
+  .mobile-menu-links {
+    padding: 16px;
+  }
+
+  .mobile-nav-link {
+    font-size: 15px;
+    padding: 14px;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-left .logo span {
+    font-size: 16px;
+  }
+
+  .login-button {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
+  }
+   
+  .mobile-menu-button svg {
+    transition: all 0.3s ease;
+  }
+   
+  .mobile-menu-button svg.hidden {
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+   
+  /* Enhance visibility of mobile menu button in transparent mode */
+  .navbar.transparent .mobile-menu-button svg {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  }
+}
