@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react';
 import HeroSection from './HeroSection';
 import DestinationSection from './DestinationSection';
 import CruiseLineSection from './CruiseLineSection';
+<<<<<<< HEAD
+=======
+import PartnerSection from './PartnerSection';
+>>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
 import { FaShip, FaAnchor, FaStar, FaLifeRing, FaUsers, FaCheckCircle, FaTimes, FaQuoteRight, FaUser, FaEnvelope, FaCommentAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Navbar from '../Navbar';
@@ -64,11 +68,19 @@ const TrustIndicators = () => {
         
         <div className="mt-8 flex justify-center">
           <div className="flex gap-8 opacity-60">
+<<<<<<< HEAD
             <img src="https://images.unsplash.com/photo-1617299102022-caef54a3ac5d?q=80&w=200&auto=format&fit=crop" alt="Forbes" className="h-6" />
             <img src="https://images.unsplash.com/photo-1612539225202-788cbf9afa8e?q=80&w=200&auto=format&fit=crop" alt="Travel+Leisure" className="h-6" />
             <img src="https://images.unsplash.com/photo-1635501900957-5dd82d1e47df?q=80&w=200&auto=format&fit=crop" alt="Cruise Critic" className="h-6" />
             <img src="https://images.unsplash.com/photo-1562577308-c8b2614b9b9a?q=80&w=200&auto=format&fit=crop" alt="TripAdvisor" className="h-6" />
             <img src="https://images.unsplash.com/photo-1605565348518-bef3e7d6fed8?q=80&w=200&auto=format&fit=crop" alt="CN Traveler" className="h-6" />
+=======
+            <img src="/images/logos/forbes.png" alt="Forbes" className="h-6" />
+            <img src="/images/logos/travelandleisure.png" alt="Travel+Leisure" className="h-6" />
+            <img src="/images/logos/cruisecritic.png" alt="Cruise Critic" className="h-6" />
+            <img src="/images/logos/tripadvisor.png" alt="TripAdvisor" className="h-6" />
+            <img src="/images/logos/cntraveler.png" alt="CN Traveler" className="h-6" />
+>>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
           </div>
         </div>
       </div>
@@ -124,21 +136,33 @@ const TestimonialBanner = () => {
       position: "Travels with Royal Caribbean",
       text: "The best cruise booking experience I've ever had! Their customer service team went above and beyond to help me find the perfect cruise for my family. The booking process was seamless and everything was organized perfectly.",
       rating: 5,
+<<<<<<< HEAD
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop"
+=======
+      image: "/images/reviewer1.jpg"
+>>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
     },
     {
       name: "Michael Chen",
       position: "Frequent Cruiser",
       text: "I've booked multiple cruises through this website and have never been disappointed. The prices are competitive and the booking process is seamless. Their support team is always available to answer questions.",
       rating: 5,
+<<<<<<< HEAD
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
+=======
+      image: "/images/reviewer2.jpg"
+>>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
     },
     {
       name: "Emily Rodriguez",
       position: "First-time Cruiser",
       text: "As someone new to cruising, I appreciated how easy it was to find information and compare options. They made the whole experience stress-free! I'll definitely be booking my next cruise here too.",
       rating: 5,
+<<<<<<< HEAD
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop"
+=======
+      image: "/images/reviewer3.jpg"
+>>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
     }
   ];
 
@@ -157,6 +181,7 @@ const TestimonialBanner = () => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="mb-6 md:mb-0 md:w-2/3 text-center md:text-left">
             <h3 className="text-2xl md:text-3xl font-bold mb-2">"The best cruise booking experience I've ever had!"</h3>
+<<<<<<< HEAD
             <p className="opacity-90 mb-2">— Sarah Johnson, traveled with Royal Caribbean</p>
             <div className="flex items-center justify-center md:justify-start mb-1">
               <div className="flex items-center">
@@ -167,11 +192,22 @@ const TestimonialBanner = () => {
                 <FaStar className="text-yellow-300 text-sm" />
                 <span className="ml-2 text-sm opacity-90">5.0 from over 3,200 reviews</span>
               </div>
+=======
+            <p className="opacity-90 mb-4">— Sarah Johnson, traveled with Royal Caribbean</p>
+            <div className="flex items-center justify-center md:justify-start">
+              <FaStar className="text-yellow-300" />
+              <FaStar className="text-yellow-300" />
+              <FaStar className="text-yellow-300" />
+              <FaStar className="text-yellow-300" />
+              <FaStar className="text-yellow-300" />
+              <span className="ml-2 text-sm opacity-90">5.0 from over 3,200 reviews</span>
+>>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
             </div>
           </div>
           
           <div className="flex space-x-3">
             <button 
+<<<<<<< HEAD
               className="bg-white text-[#0066b2] font-medium py-2 px-4 rounded-full hover:bg-opacity-90 transition-all flex items-center hover:shadow-md text-sm"
               onClick={() => setShowTestimonials(true)}
             >
@@ -182,6 +218,18 @@ const TestimonialBanner = () => {
               onClick={() => setShowContactForm(true)}
             >
               <FaLifeRing className="mr-1" size={14} /> Contact Support
+=======
+              className="bg-white text-[#0066b2] font-bold py-3 px-6 rounded-full hover:bg-opacity-90 transition-all flex items-center hover:shadow-lg hover:-translate-y-1 duration-300"
+              onClick={() => setShowTestimonials(true)}
+            >
+              <FaUsers className="mr-2" /> Read Testimonials
+            </button>
+            <button 
+              className="bg-transparent border-2 border-white text-white font-bold py-3 px-6 rounded-full hover:bg-white hover:text-[#0066b2] transition-all flex items-center hover:shadow-lg hover:-translate-y-1 duration-300"
+              onClick={() => setShowContactForm(true)}
+            >
+              <FaLifeRing className="mr-2" /> Contact Support
+>>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
             </button>
           </div>
         </div>
@@ -468,8 +516,13 @@ const PromoSection = () => {
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2 relative">
               <img 
+<<<<<<< HEAD
                 src="https://images.unsplash.com/photo-1690642692361-95a973590347?q=80&w=1664&auto=format&fit=crop&ixlib=rb-4.0.3" 
                 alt="Limited Time Offer - Milford Sound Cruise" 
+=======
+                src="/images/Rectangle 1434 (2).png" 
+                alt="Limited Time Offer" 
+>>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                 className="w-full h-full object-cover"
               />
               <div className="absolute top-4 left-4 bg-red-500 text-white px-4 py-2 rounded-full text-sm font-bold">
@@ -501,6 +554,7 @@ const PromoSection = () => {
   );
 };
 
+<<<<<<< HEAD
 const SubscriptionSection = () => {
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -629,6 +683,8 @@ const SubscriptionSection = () => {
   );
 };
 
+=======
+>>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
 const HomePage = () => {
   useEffect(() => {
     // Scroll to top when component mounts
@@ -676,8 +732,36 @@ const HomePage = () => {
           <PromoSection />
         </section>
         
+<<<<<<< HEAD
         {/* Email Subscription Section */}
         <SubscriptionSection />
+=======
+        <section id="partners" style={styles.section}>
+          <PartnerSection />
+        </section>
+        
+        {/* Simple Email Subscription Section */}
+        <section className="simple-subscription-section bg-gray-50 py-12">
+          <div className="container mx-auto px-4 text-center max-w-2xl">
+            <h3 className="text-2xl font-semibold text-gray-800 mb-3">Stay Updated</h3>
+            <p className="text-gray-600 mb-6">Subscribe to receive the latest cruise deals and travel tips directly to your inbox.</p>
+            <form className="flex flex-col sm:flex-row gap-3 justify-center">
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                required
+              />
+              <button 
+                type="submit" 
+                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300 shadow hover:shadow-md"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </section>
+>>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
       </main>
       
       {/* <PopularPorts /> */}
