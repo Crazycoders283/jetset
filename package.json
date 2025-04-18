@@ -7,7 +7,7 @@
         "client": "vite",
         "dev": "concurrently \"npm run server\" \"npm run client\"",
         "build": "vite build",
-        "vercel-build": "vite build",
+        "vercel-build": "vite build && cp -R resources/css dist/ || true",
         "render-build": "node render-setup.js",
         "postinstall": "npm install @vitejs/plugin-react vite --no-save || true"
     },
