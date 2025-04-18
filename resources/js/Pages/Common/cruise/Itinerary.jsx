@@ -5,7 +5,6 @@ import Navbar from '../Navbar';
 import Footer from '../Footer';
 
 const cruiseHighlights = [
-<<<<<<< HEAD
   { 
     title: "Luxury Dining", 
     img: "https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?q=80&w=500&auto=format&fit=crop" 
@@ -28,19 +27,6 @@ const reviewers = [
   { id: 1, isActive: true, image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop" },
   { id: 2, isActive: false, image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop" },
   { id: 3, isActive: false, image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&auto=format&fit=crop" }
-=======
-  { title: "Cruise Dining", img: "/images/dining.jpg" },
-  { title: "Cruise Party", img: "/images/party.jpg" },
-  { title: "Cruise Entertainment", img: "/images/entertainment.jpg" }
-];
-
-const reviewers = [
-  { id: 1, image: "/images/reviewer1.jpg", isActive: true },
-  { id: 2, image: "/images/reviewer2.jpg", isActive: false },
-  { id: 3, image: "/images/reviewer3.jpg", isActive: false },
-  { id: 4, image: "/images/reviewer4.jpg", isActive: false },
-  { id: 5, image: "/images/reviewer5.jpg", isActive: false }
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
 ];
 
 const CombinedStyles = () => (
@@ -480,11 +466,7 @@ const Itinerary = () => {
       {/* Hero Header Image */}
       <div className="relative w-full">
         <img 
-<<<<<<< HEAD
           src="https://images.unsplash.com/photo-1548574505-5e239809ee19?q=80&w=1664&auto=format&fit=crop" 
-=======
-          src="/images/Rectangle 1434 (1).png" 
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
           alt="Cruise Itinerary" 
           className="w-full h-[400px] object-cover object-center brightness-75"
         />
@@ -663,22 +645,14 @@ const Itinerary = () => {
           onClick={() => setShowCallbackPopup(false)}
         >
           <div 
-<<<<<<< HEAD
             className="bg-white rounded-2xl shadow-2xl max-w-sm w-full p-0 relative overflow-hidden animate-fadeIn"
-=======
-            className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-0 relative overflow-hidden animate-fadeIn"
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
             onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
             style={{
               animation: 'fadeIn 0.3s ease-out',
               boxShadow: '0 20px 50px rgba(0, 0, 0, 0.2)',
             }}
           >
-<<<<<<< HEAD
             <div className="bg-gradient-to-r from-[#0066b2] to-[#1e88e5] pt-6 pb-10 px-6 text-white relative">
-=======
-            <div className="bg-gradient-to-r from-[#0066b2] to-[#1e88e5] pt-8 pb-12 px-6 text-white relative">
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
               <button 
                 className="absolute top-4 right-4 text-white hover:text-gray-200 transition-colors"
                 onClick={() => setShowCallbackPopup(false)}
@@ -701,11 +675,7 @@ const Itinerary = () => {
               <div className="absolute -bottom-6 left-0 right-0 h-12 bg-white rounded-t-[50%]"></div>
             </div>
             
-<<<<<<< HEAD
             <div className="px-6 py-4">
-=======
-            <div className="px-6 pb-6 pt-4">
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
               {formSubmitted ? (
                 <div className="text-center py-10 px-4 animate-fadeIn" style={{ animation: 'fadeIn 0.5s ease-out' }}>
                   <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -718,15 +688,9 @@ const Itinerary = () => {
                   <div className="w-16 h-1 bg-green-500 mx-auto"></div>
                 </div>
               ) : (
-<<<<<<< HEAD
                 <form onSubmit={handleSubmit} className="space-y-3 pt-3">
                   <div className={`transition-all duration-200 ${activeField === 'name' ? 'transform -translate-y-1' : ''}`}>
                     <label className="block text-gray-700 text-sm font-semibold mb-1" htmlFor="name">
-=======
-                <form onSubmit={handleSubmit} className="space-y-5 pt-3">
-                  <div className={`transition-all duration-200 ${activeField === 'name' ? 'transform -translate-y-1' : ''}`}>
-                    <label className="block text-gray-700 text-sm font-semibold mb-2" htmlFor="name">
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                       Full Name*
                     </label>
                     <div className={`relative rounded-lg transition-all duration-300 ${activeField === 'name' ? 'ring-2 ring-[#0066b2]' : 'ring-1 ring-gray-200'}`}>
@@ -742,22 +706,14 @@ const Itinerary = () => {
                         onFocus={() => handleFocus('name')}
                         onBlur={handleBlur}
                         required
-<<<<<<< HEAD
                         className="w-full bg-gray-50 pl-12 pr-4 py-2 border-none rounded-lg focus:outline-none"
-=======
-                        className="w-full bg-gray-50 pl-12 pr-4 py-3 border-none rounded-lg focus:outline-none"
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                         placeholder="John Doe"
                       />
                     </div>
                   </div>
                   
                   <div className={`transition-all duration-200 ${activeField === 'email' ? 'transform -translate-y-1' : ''}`}>
-<<<<<<< HEAD
                     <label className="block text-gray-700 text-sm font-semibold mb-1" htmlFor="email">
-=======
-                    <label className="block text-gray-700 text-sm font-semibold mb-2" htmlFor="email">
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                       Email Address*
                     </label>
                     <div className={`relative rounded-lg transition-all duration-300 ${activeField === 'email' ? 'ring-2 ring-[#0066b2]' : 'ring-1 ring-gray-200'}`}>
@@ -773,22 +729,14 @@ const Itinerary = () => {
                         onFocus={() => handleFocus('email')}
                         onBlur={handleBlur}
                         required
-<<<<<<< HEAD
                         className="w-full bg-gray-50 pl-12 pr-4 py-2 border-none rounded-lg focus:outline-none"
-=======
-                        className="w-full bg-gray-50 pl-12 pr-4 py-3 border-none rounded-lg focus:outline-none"
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                         placeholder="john@example.com"
                       />
                     </div>
                   </div>
                   
                   <div className={`transition-all duration-200 ${activeField === 'phone' ? 'transform -translate-y-1' : ''}`}>
-<<<<<<< HEAD
                     <label className="block text-gray-700 text-sm font-semibold mb-1" htmlFor="phone">
-=======
-                    <label className="block text-gray-700 text-sm font-semibold mb-2" htmlFor="phone">
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                       Phone Number*
                     </label>
                     <div className={`relative rounded-lg transition-all duration-300 ${activeField === 'phone' ? 'ring-2 ring-[#0066b2]' : 'ring-1 ring-gray-200'}`}>
@@ -804,22 +752,14 @@ const Itinerary = () => {
                         onFocus={() => handleFocus('phone')}
                         onBlur={handleBlur}
                         required
-<<<<<<< HEAD
                         className="w-full bg-gray-50 pl-12 pr-4 py-2 border-none rounded-lg focus:outline-none"
-=======
-                        className="w-full bg-gray-50 pl-12 pr-4 py-3 border-none rounded-lg focus:outline-none"
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                         placeholder="+1 (123) 456-7890"
                       />
                     </div>
                   </div>
                   
                   <div className={`transition-all duration-200 ${activeField === 'preferredDate' ? 'transform -translate-y-1' : ''}`}>
-<<<<<<< HEAD
                     <label className="block text-gray-700 text-sm font-semibold mb-1" htmlFor="preferredDate">
-=======
-                    <label className="block text-gray-700 text-sm font-semibold mb-2" htmlFor="preferredDate">
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                       Preferred Call Time
                     </label>
                     <div className={`relative rounded-lg transition-all duration-300 ${activeField === 'preferredDate' ? 'ring-2 ring-[#0066b2]' : 'ring-1 ring-gray-200'}`}>
@@ -834,22 +774,14 @@ const Itinerary = () => {
                         onChange={handleInputChange}
                         onFocus={() => handleFocus('preferredDate')}
                         onBlur={handleBlur}
-<<<<<<< HEAD
                         className="w-full bg-gray-50 pl-12 pr-4 py-2 border-none rounded-lg focus:outline-none"
-=======
-                        className="w-full bg-gray-50 pl-12 pr-4 py-3 border-none rounded-lg focus:outline-none"
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                         placeholder="E.g. Weekdays after 2 PM"
                       />
                     </div>
                   </div>
                   
                   <div className={`transition-all duration-200 ${activeField === 'message' ? 'transform -translate-y-1' : ''}`}>
-<<<<<<< HEAD
                     <label className="block text-gray-700 text-sm font-semibold mb-1" htmlFor="message">
-=======
-                    <label className="block text-gray-700 text-sm font-semibold mb-2" htmlFor="message">
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                       Additional Information
                     </label>
                     <div className={`relative rounded-lg transition-all duration-300 ${activeField === 'message' ? 'ring-2 ring-[#0066b2]' : 'ring-1 ring-gray-200'}`}>
@@ -863,13 +795,8 @@ const Itinerary = () => {
                         onChange={handleInputChange}
                         onFocus={() => handleFocus('message')}
                         onBlur={handleBlur}
-<<<<<<< HEAD
                         rows="2"
                         className="w-full bg-gray-50 pl-12 pr-4 py-2 border-none rounded-lg focus:outline-none resize-none"
-=======
-                        rows="3"
-                        className="w-full bg-gray-50 pl-12 pr-4 py-3 border-none rounded-lg focus:outline-none resize-none"
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                         placeholder="Any specific questions or requirements?"
                       ></textarea>
                     </div>
@@ -877,20 +804,12 @@ const Itinerary = () => {
                   
                   <button
                     type="submit"
-<<<<<<< HEAD
                     className="w-full bg-gradient-to-r from-[#0066b2] to-[#1e88e5] text-white font-bold py-3 px-4 rounded-xl hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 mt-4"
-=======
-                    className="w-full bg-gradient-to-r from-[#0066b2] to-[#1e88e5] text-white font-bold py-4 px-4 rounded-xl hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 mt-6"
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                   >
                     <FaPhone size={16} /> Request Call Back
                   </button>
                   
-<<<<<<< HEAD
                   <p className="text-xs text-center text-gray-500 mt-3">
-=======
-                  <p className="text-xs text-center text-gray-500 mt-4">
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                     By submitting this form, you agree to our <a href="#" className="text-[#0066b2]">Terms & Conditions</a> and <a href="#" className="text-[#0066b2]">Privacy Policy</a>
                   </p>
                 </form>
@@ -915,4 +834,3 @@ const Itinerary = () => {
   );
 };
 
-export default Itinerary; 

@@ -1,17 +1,10 @@
 {
   "cruiseLines": [
     {
-<<<<<<< HEAD
       "id": "rc",
       "name": "Royal Caribbean",
       "logo": "/cruise/logos/royal-caribbean.png",
       "image": "https://images.unsplash.com/photo-1548574505-5e239809ee19?q=80&w=1664&auto=format&fit=crop",
-=======
-      "id": 1,
-      "name": "Royal Caribbean",
-      "logo": "/cruise/logos/royal-caribbean.png",
-      "image": "/images/Rectangle 1434 (1).png",
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
       "price": "From $699",
       "priceValue": 699,
       "duration": "7 Nights",
@@ -35,7 +28,6 @@
           "expiryDate": "2023-09-15"
         }
       ],
-<<<<<<< HEAD
       "ships": ["Wonder of the Seas", "Symphony of the Seas", "Harmony of the Seas", "Allure of the Seas", "Oasis of the Seas"],
       "cruises": [
         {
@@ -67,19 +59,6 @@
       "priceValue": 599,
       "duration": "7 Nights",
       "description": "Alaska & European Cruises",
-=======
-      "ships": ["Wonder of the Seas", "Symphony of the Seas", "Harmony of the Seas", "Allure of the Seas", "Oasis of the Seas"]
-    },
-    {
-      "id": 2,
-      "name": "Norwegian Cruise Line",
-      "logo": "/cruise/logos/norwegian.png",
-      "image": "/images/Rectangle 1434 (2).png",
-      "price": "From $599",
-      "priceValue": 599,
-      "duration": "5 Nights",
-      "description": "Mediterranean & European Cruises",
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
       "longDescription": "Enjoy the freedom and flexibility of Freestyle Cruising with Norwegian Cruise Line, where you can dine when you want, wear what you want, and enjoy a variety of activities at your own pace.",
       "rating": 4.5,
       "reviews": 2876,
@@ -99,7 +78,6 @@
           "expiryDate": "2023-07-31"
         }
       ],
-<<<<<<< HEAD
       "ships": ["Norwegian Prima", "Norwegian Encore", "Norwegian Bliss", "Norwegian Joy", "Norwegian Escape"],
       "cruises": [
         {
@@ -112,19 +90,12 @@
           "image": "https://images.unsplash.com/photo-1531176175280-33e81422832a?q=80&w=1664&auto=format&fit=crop"
         }
       ]
-=======
-      "ships": ["Norwegian Prima", "Norwegian Encore", "Norwegian Bliss", "Norwegian Joy", "Norwegian Escape"]
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
     },
     {
       "id": 3,
       "name": "Celebrity Cruises",
       "logo": "/cruise/logos/celebrity.png",
-<<<<<<< HEAD
       "image": "https://images.unsplash.com/photo-1612165399085-25c59b79e51e?q=80&w=1664&auto=format&fit=crop",
-=======
-      "image": "/images/Rectangle 1434 (3).png",
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
       "price": "From $899",
       "priceValue": 899,
       "duration": "10 Nights",
@@ -148,7 +119,6 @@
           "expiryDate": "2023-12-31"
         }
       ],
-<<<<<<< HEAD
       "ships": ["Celebrity Edge", "Celebrity Apex", "Celebrity Beyond", "Celebrity Flora", "Celebrity Solstice"],
       "cruises": [
         {
@@ -161,9 +131,6 @@
           "image": "https://images.unsplash.com/photo-1515861461225-1488dfdaf0a8?q=80&w=1664&auto=format&fit=crop"
         }
       ]
-=======
-      "ships": ["Celebrity Edge", "Celebrity Apex", "Celebrity Beyond", "Celebrity Flora", "Celebrity Solstice"]
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
     },
     {
       "id": 4,
@@ -199,11 +166,7 @@
       "id": 5,
       "name": "Princess Cruises",
       "logo": "/cruise/logos/princess.png",
-<<<<<<< HEAD
       "image": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=1664&auto=format&fit=crop",
-=======
-      "image": "/images/Rectangle 1434 (5).png",
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
       "price": "From $799",
       "priceValue": 799,
       "duration": "7 Nights",
@@ -227,7 +190,6 @@
           "expiryDate": "2023-08-15"
         }
       ],
-<<<<<<< HEAD
       "ships": ["Discovery Princess", "Enchanted Princess", "Sky Princess", "Majestic Princess", "Royal Princess"],
       "cruises": [
         {
@@ -240,9 +202,6 @@
           "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1664&auto=format&fit=crop"
         }
       ]
-=======
-      "ships": ["Discovery Princess", "Enchanted Princess", "Sky Princess", "Majestic Princess", "Royal Princess"]
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
     },
     {
       "id": 6,
@@ -455,4 +414,3 @@
       "ships": ["Oceania Vista", "Oceania Riviera", "Oceania Marina", "Oceania Nautica", "Oceania Sirena"]
     }
   ]
-}

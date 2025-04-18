@@ -24,11 +24,7 @@ const CruiseCards = () => {
       destination: "Caribbean",
       portsOfCall: "Cozumel, Mexico • George Town, Grand Cayman • Falmouth, Jamaica",
       sailingDates: "January 2025 • February 2025 • March 2025",
-<<<<<<< HEAD
       image: "https://images.unsplash.com/photo-1548574505-5e239809ee19?q=80&w=1664&auto=format&fit=crop&ixlib=rb-4.0.3",
-=======
-      image: "/images/royal-caribbean.jpg",
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
     },
     {
       id: 2,
@@ -38,11 +34,7 @@ const CruiseCards = () => {
       destination: "Mediterranean",
       portsOfCall: "Naples, Italy • Rome (Civitavecchia), Italy • Florence/Pisa (Livorno), Italy",
       sailingDates: "April 2025 • May 2025 • June 2025",
-<<<<<<< HEAD
       image: "https://images.unsplash.com/photo-1516495312540-a148643dfeee?q=80&w=1664&auto=format&fit=crop&ixlib=rb-4.0.3",
-=======
-      image: "/images/norwegian.jpg",
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
     },
     {
       id: 3,
@@ -53,11 +45,7 @@ const CruiseCards = () => {
       country: "Canada",
       portsOfCall: "Ketchikan, Alaska • Juneau, Alaska • Skagway, Alaska • Glacier Bay National Park",
       sailingDates: "June 2025 • July 2025 • August 2025",
-<<<<<<< HEAD
       image: "https://images.unsplash.com/photo-1531176175280-33e81422832a?q=80&w=1664&auto=format&fit=crop&ixlib=rb-4.0.3",
-=======
-      image: "/images/celebrity.jpg",
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
     },
     {
       id: 4,
@@ -67,11 +55,7 @@ const CruiseCards = () => {
       destination: "Bahamas",
       portsOfCall: "Nassau, Bahamas • Disney Castaway Cay",
       sailingDates: "January 2025 • February 2025 • March 2025",
-<<<<<<< HEAD
       image: "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1664&auto=format&fit=crop&ixlib=rb-4.0.3",
-=======
-      image: "/images/disney.jpg",
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
     },
     {
       id: 5,
@@ -82,11 +66,7 @@ const CruiseCards = () => {
       departing: "Tokyo (Yokohama), Japan",
       portsOfCall: "Kobe, Japan • Busan, South Korea • Nagasaki, Japan",
       sailingDates: "May 2025 • June 2025 • July 2025",
-<<<<<<< HEAD
       image: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1664&auto=format&fit=crop&ixlib=rb-4.0.3",
-=======
-      image: "/images/princess.jpg",
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
     },
     {
       id: 6,
@@ -97,7 +77,6 @@ const CruiseCards = () => {
       departing: "Piraeus (Athens), Greece",
       portsOfCall: "Santorini, Greece • Mykonos, Greece • Kusadasi, Turkey",
       sailingDates: "June 2025 • July 2025 • August 2025",
-<<<<<<< HEAD
       image: "https://images.unsplash.com/photo-1601581875039-e899893d520c?q=80&w=1664&auto=format&fit=crop&ixlib=rb-4.0.3",
     },
     {
@@ -111,10 +90,6 @@ const CruiseCards = () => {
       sailingDates: "October 2025 • November 2025 • December 2025",
       image: "https://images.unsplash.com/photo-1690642692361-95a973590347?q=80&w=1664&auto=format&fit=crop&ixlib=rb-4.0.3",
     }
-=======
-      image: "/images/msc.jpg",
-    },
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
   ];
 
   // Filter cruises based on query parameters
@@ -161,11 +136,7 @@ const CruiseCards = () => {
       <div className="w-full">
         <div className="relative">
           <img 
-<<<<<<< HEAD
             src="https://images.unsplash.com/photo-1604156788856-2ce5f2171e90?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" 
-=======
-            src="/images/Rectangle 1434.png" 
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
             alt="Cruise Header" 
             className="w-full h-[500px] object-cover object-center brightness-75"
           />
@@ -332,11 +303,7 @@ const CruiseCards = () => {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-<<<<<<< HEAD
               <div className="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow">
-=======
-              <div className="bg-white p-6 rounded-xl shadow-md text-center">
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                 <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-[#0066b2]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
@@ -346,11 +313,7 @@ const CruiseCards = () => {
                 <p className="text-gray-600">Your personal and payment information is always protected</p>
               </div>
               
-<<<<<<< HEAD
               <div className="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow">
-=======
-              <div className="bg-white p-6 rounded-xl shadow-md text-center">
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                 <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-[#0066b2]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -360,11 +323,7 @@ const CruiseCards = () => {
                 <p className="text-gray-600">We'll match or beat any comparable cruise offer</p>
               </div>
               
-<<<<<<< HEAD
               <div className="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow">
-=======
-              <div className="bg-white p-6 rounded-xl shadow-md text-center">
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                 <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-[#0066b2]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
@@ -382,4 +341,3 @@ const CruiseCards = () => {
   );
 };
 
-export default CruiseCards; 

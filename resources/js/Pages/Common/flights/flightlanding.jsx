@@ -71,11 +71,7 @@ export default function FlightLanding() {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-blue-900/50 via-indigo-900/40 to-black/60"></div>
-<<<<<<< HEAD
         <div className="absolute inset-0 flex flex-col justify-center px-4 sm:px-8 md:px-16 z-10">
-=======
-        <div className="absolute inset-0 flex flex-col justify-center px-8 md:px-16 z-10">
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
           <div className="container mx-auto">
             <div className="max-w-[700px] animate-fade-in-up">
               <div className="flex items-center mb-4">
@@ -84,7 +80,6 @@ export default function FlightLanding() {
                   <span className="font-script">Explore the World</span>
                 </h2>
               </div>
-<<<<<<< HEAD
               <h1 className="text-white text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight">
                 Find Your <span className="text-blue-300">Perfect Flight</span> Today
               </h1>
@@ -95,18 +90,6 @@ export default function FlightLanding() {
               <div className="w-full">
                 <FlightSearchForm onSearch={handleSearch} />
               </div>
-=======
-              <h1 className="text-white text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                Find Your <span className="text-blue-300">Perfect Flight</span> Today
-              </h1>
-              <p className="text-gray-200 text-lg mb-10 max-w-xl">
-                Discover amazing deals on flights to destinations worldwide. Book with confidence and travel with peace of mind.
-              </p>
-              
-              {/* <div className="bg-white/10 backdrop-blur-md p-8 rounded-xl shadow-2xl border border-white/20 transform hover:scale-[1.01] transition-transform duration-300"> */}
-                <FlightSearchForm onSearch={handleSearch} />
-              
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
             </div>
           </div>
         </div>

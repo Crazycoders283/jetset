@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-<<<<<<< HEAD
 import { 
   Menu, 
   X, 
@@ -12,8 +11,6 @@ import {
   Car, 
   Briefcase 
 } from 'lucide-react';
-=======
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
 import './Navbar.css';
 
 const Navbar = () => {
@@ -47,11 +44,8 @@ const Navbar = () => {
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
-<<<<<<< HEAD
     // Prevent body scroll when menu is open
     document.body.style.overflow = isMobileMenuOpen ? 'auto' : 'hidden';
-=======
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
   };
 
   const handleLogin = () => {
@@ -61,16 +55,12 @@ const Navbar = () => {
   const handleProfile = () => {
     window.location.href = '/profiledashboard';
     setIsDropdownOpen(false);
-<<<<<<< HEAD
     setIsMobileMenuOpen(false);
-=======
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
   };
 
   const handleLogout = () => {
     localStorage.removeItem('isAuthenticated');
     setIsAuthenticated(false);
-<<<<<<< HEAD
     setIsMobileMenuOpen(false);
     window.location.href = '/login';
   };
@@ -83,14 +73,6 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : 'transparent'}`}>
       <div className="navbar-left-20">
-=======
-    window.location.href = '/login';
-  };
-
-  return (
-    <nav className={`navbar ${isScrolled ? 'scrolled' : 'transparent'}`}>
-      <div className="navbar-left">
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
         <div className="logo">
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
@@ -105,11 +87,7 @@ const Navbar = () => {
             <path d="M2 12h20"></path>
             <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
           </svg>
-<<<<<<< HEAD
           <span>JETSETTERS</span>
-=======
-          <span>JET SETTERS</span>
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
         </div>
       </div>
 
@@ -140,63 +118,17 @@ const Navbar = () => {
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
               <div className="profile-icon">
-<<<<<<< HEAD
                 <User size={24} />
-=======
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  viewBox="0 0 24 24" 
-                  fill="none" 
-                  stroke="currentColor" 
-                  strokeWidth="2" 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round"
-                >
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
-                </svg>
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
               </div>
             </button>
             {isDropdownOpen && (
               <div className="profile-dropdown">
                 <button onClick={handleProfile}>
-<<<<<<< HEAD
                   <User size={18} />
                   Profile
                 </button>
                 <button onClick={handleLogout}>
                   <LogOut size={18} />
-=======
-                  <svg 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    viewBox="0 0 24 24" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    strokeWidth="2" 
-                    strokeLinecap="round" 
-                    strokeLinejoin="round"
-                  >
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                  </svg>
-                  Profile
-                </button>
-                <button onClick={handleLogout}>
-                  <svg 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    viewBox="0 0 24 24" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    strokeWidth="2" 
-                    strokeLinecap="round" 
-                    strokeLinejoin="round"
-                  >
-                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-                    <polyline points="16 17 21 12 16 7"></polyline>
-                    <line x1="21" y1="12" x2="9" y2="12"></line>
-                  </svg>
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                   Logout
                 </button>
               </div>
@@ -210,44 +142,13 @@ const Navbar = () => {
 
         {/* Mobile menu button */}
         <button className="mobile-menu-button" onClick={toggleMobileMenu}>
-<<<<<<< HEAD
           {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
-=======
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            viewBox="0 0 24 24" 
-            fill="none" 
-            stroke="currentColor" 
-            strokeWidth="2" 
-            strokeLinecap="round" 
-            strokeLinejoin="round"
-            className={isMobileMenuOpen ? "hidden" : ""}
-          >
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            viewBox="0 0 24 24" 
-            fill="none" 
-            stroke="currentColor" 
-            strokeWidth="2" 
-            strokeLinecap="round" 
-            strokeLinejoin="round"
-            className={isMobileMenuOpen ? "" : "hidden"}
-          >
-            <line x1="18" y1="6" x2="6" y2="18"></line>
-            <line x1="6" y1="6" x2="18" y2="18"></line>
-          </svg>
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
         </button>
       </div>
 
       {/* Mobile menu */}
       <div className={`mobile-menu ${isMobileMenuOpen ? 'open' : ''}`}>
         <div className="mobile-menu-links">
-<<<<<<< HEAD
           <Link to="/" className="mobile-nav-link" onClick={closeMobileMenu}>
             <Home size={20} />
             Cruise
@@ -266,48 +167,23 @@ const Navbar = () => {
           </Link>
           <Link to="/my-trips" className="mobile-nav-link" onClick={closeMobileMenu}>
             <Briefcase size={20} />
-=======
-          <Link to="/" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>
-            Cruise
-          </Link>
-          <Link to="/flights" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>
-            Flight
-          </Link>
-          <Link to="/packages" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>
-            Packages
-          </Link>
-          <Link to="/rental" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>
-            Rental
-          </Link>
-          <Link to="/my-trips" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
             My Trips
           </Link>
           
           {!isAuthenticated && (
             <button className="mobile-login-button" onClick={handleLogin}>
-<<<<<<< HEAD
               Login/Signup
-=======
-              Login
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
             </button>
           )}
           
           {isAuthenticated && (
             <>
               <button onClick={handleProfile} className="mobile-profile-button">
-<<<<<<< HEAD
                 <User size={20} className="mr-2" />
                 Profile
               </button>
               <button onClick={handleLogout} className="mobile-logout-button">
                 <LogOut size={20} className="mr-2" />
-=======
-                Profile
-              </button>
-              <button onClick={handleLogout} className="mobile-logout-button">
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                 Logout
               </button>
             </>
@@ -318,4 +194,3 @@ const Navbar = () => {
   );
 };
 
-export default Navbar; 

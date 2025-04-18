@@ -35,14 +35,9 @@ export default function LandingPage() {
   // Search states
   const [searchDestination, setSearchDestination] = useState("");
   const [searchPackageType, setSearchPackageType] = useState("All Inclusive");
-<<<<<<< HEAD
   const [searchDates, setSearchDates] = useState("");
   const [searchTravelers, setSearchTravelers] = useState(2);
   const [showDatePicker, setShowDatePicker] = useState(false);
-=======
-  const [searchDates, setSearchDates] = useState("Select dates");
-  const [searchTravelers, setSearchTravelers] = useState(2);
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
   const [filteredHotels, setFilteredHotels] = useState([]);
 
   // Handle scroll animations
@@ -106,7 +101,6 @@ export default function LandingPage() {
     { icon: <Shield size={18} />, text: "Security" }
   ];
 
-<<<<<<< HEAD
   const handleSearch = (e) => {
     e.preventDefault();
     // Filter hotels based on search criteria
@@ -125,8 +119,6 @@ export default function LandingPage() {
     setShowDatePicker(false);
   };
 
-=======
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
   return (
     <main className="min-h-screen bg-white font-poppins overflow-x-hidden">
       {/* Navbar */}
@@ -166,24 +158,14 @@ export default function LandingPage() {
             </div>
 
             {/* Search Form */}
-<<<<<<< HEAD
             <div className="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl p-4 sm:p-5 w-full max-w-5xl mx-auto animate-fade-in-up overflow-hidden" style={{ animationDelay: '0.4s' }}>
               <form onSubmit={handleSearch} className="relative">
-=======
-            <div className="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl p-5 max-w-5xl mx-auto animate-fade-in-up overflow-hidden" style={{ animationDelay: '0.4s' }}>
-              <div className="relative">
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                 {/* Background Decorative Elements */}
                 <div className="absolute -top-16 -right-16 w-40 h-40 rounded-full bg-blue-100/40 z-0"></div>
                 <div className="absolute -bottom-20 -left-20 w-48 h-48 rounded-full bg-blue-50/30 z-0"></div>
                 
-<<<<<<< HEAD
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-3 items-center px-3 py-2 relative z-10">
                   <div className="flex flex-col px-3 py-2 sm:border-r border-gray-200/70">
-=======
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-3 items-center px-3 py-2 relative z-10">
-                  <div className="flex flex-col px-3 py-2 md:border-r border-gray-200/70">
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                     <label className="text-sm text-gray-700 font-medium mb-2 flex items-center gap-2">
                       <MapPin className="h-4 w-4 text-blue-500" />
                       Destination
@@ -193,11 +175,7 @@ export default function LandingPage() {
                         type="text"
                         value={searchDestination}
                         onChange={(e) => setSearchDestination(e.target.value)}
-<<<<<<< HEAD
                         placeholder="Where do you want to go?"
-=======
-                        placeholder="Where do you want"
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                         className="w-full py-3 pl-4 pr-10 bg-gray-50/80 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:border-blue-200 group-hover:shadow-sm"
                       />
                       <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
@@ -208,11 +186,7 @@ export default function LandingPage() {
                     </div>
                   </div>
 
-<<<<<<< HEAD
                   <div className="flex flex-col px-3 py-2 sm:border-r border-gray-200/70">
-=======
-                  <div className="flex flex-col px-3 py-2 md:border-r border-gray-200/70">
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                     <label className="text-sm text-gray-700 font-medium mb-2 flex items-center gap-2">
                       <svg className="h-4 w-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
@@ -225,18 +199,11 @@ export default function LandingPage() {
                         onChange={(e) => setSearchPackageType(e.target.value)}
                         className="w-full py-3 pl-4 pr-10 bg-gray-50/80 border border-gray-200 rounded-xl appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:border-blue-200 group-hover:shadow-sm"
                       >
-<<<<<<< HEAD
                         <option value="">Any Package</option>
                         <option value="All Inclusive">All Inclusive</option>
                         <option value="Premium">Premium</option>
                         <option value="Standard">Standard</option>
                         <option value="Budget">Budget</option>
-=======
-                        <option>All Inclusive</option>
-                        <option>Premium</option>
-                        <option>Standard</option>
-                        <option>Budget</option>
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                       </select>
                       <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
                         <div className="p-1 rounded-full bg-blue-50 group-hover:bg-blue-100 transition-colors duration-300">
@@ -248,7 +215,6 @@ export default function LandingPage() {
                     </div>
                   </div>
 
-<<<<<<< HEAD
                   <div className="flex flex-col px-3 py-2 sm:border-r border-gray-200/70">
                     <label className="text-sm text-gray-700 font-medium mb-2 flex items-center gap-2">
                       <Calendar className="h-4 w-4 text-blue-500" />
@@ -288,26 +254,6 @@ export default function LandingPage() {
                         </div>
                       </div>
                     )}
-=======
-                  <div className="flex flex-col px-3 py-2 md:border-r border-gray-200/70">
-                    <label className="text-sm text-gray-700 font-medium mb-2 flex items-center gap-2">
-                      <Calendar className="h-4 w-4 text-blue-500" />
-                      Travel Date
-                    </label>
-                    <div className="relative group">
-                      <div 
-                        onClick={() => setSearchDates(searchDates === "Select dates" ? "25 Jul - 30 Jul 2025" : "Select dates")} 
-                        className="flex items-center w-full py-3 pl-4 pr-10 bg-gray-50/80 border border-gray-200 rounded-xl cursor-pointer transition-all duration-300 hover:border-blue-200 group-hover:shadow-sm"
-                      >
-                        <span className="text-gray-700">{searchDates}</span>
-                        <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                          <div className="p-1 rounded-full bg-blue-50 group-hover:bg-blue-100 transition-colors duration-300">
-                            <Calendar className="h-4 w-4 text-blue-500" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                   </div>
 
                   <div className="flex flex-col px-3 py-2">
@@ -316,7 +262,6 @@ export default function LandingPage() {
                       Travelers
                     </label>
                     <div className="relative group">
-<<<<<<< HEAD
                       <input
                         type="number"
                         value={searchTravelers}
@@ -328,23 +273,11 @@ export default function LandingPage() {
                       <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
                         <div className="p-1 rounded-full bg-blue-50 group-hover:bg-blue-100 transition-colors duration-300">
                           <Users className="h-4 w-4 text-blue-500" />
-=======
-                      <div 
-                        onClick={() => setSearchTravelers(searchTravelers === 2 ? 4 : 2)}
-                        className="flex items-center w-full py-3 pl-4 pr-10 bg-gray-50/80 border border-gray-200 rounded-xl cursor-pointer transition-all duration-300 hover:border-blue-200 group-hover:shadow-sm"
-                      >
-                        <span className="text-gray-700">{searchTravelers} Travelers</span>
-                        <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                          <div className="p-1 rounded-full bg-blue-50 group-hover:bg-blue-100 transition-colors duration-300">
-                            <Users className="h-4 w-4 text-blue-500" />
-                          </div>
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-<<<<<<< HEAD
 
                 <div className="mt-4 px-3">
                   <button 
@@ -356,28 +289,6 @@ export default function LandingPage() {
                   </button>
                 </div>
               </form>
-=======
-                
-                <div className="flex justify-center md:justify-end px-3 mt-4 mb-1 relative z-10">
-                  <Link 
-                    to={`/hotel-details?destination=${encodeURIComponent(searchDestination)}&packageType=${encodeURIComponent(searchPackageType)}&dates=${encodeURIComponent(searchDates)}&travelers=${searchTravelers}`} 
-                    className="w-full md:w-auto"
-                    onClick={(e) => {
-                      // If destination is empty and there's a first hotel, navigate directly to it
-                      if (!searchDestination.trim() && hotels.length > 0) {
-                        e.preventDefault();
-                        window.location.href = `/hotel-details?id=${hotels[0].id}`;
-                      }
-                    }}
-                  >
-                    <button className="w-full md:w-auto bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white py-3.5 px-10 rounded-xl transition-all duration-300 font-medium flex items-center justify-center gap-3 shadow-lg hover:shadow-blue-500/30 transform hover:-translate-y-0.5">
-                      <Search size={20} />
-                      <span>Search</span>
-                    </button>
-                  </Link>
-                </div>
-              </div>
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
             </div>
           </div>
         </div>

@@ -80,11 +80,7 @@ export default function PopularDestinations({ onSelectDestination }) {
                     />
                   </svg>
                   <span className="text-white">
-<<<<<<< HEAD
                     
-=======
-                    {index % 2 === 0 ? '70' : '50'} properties available
->>>>>>> 88b90fab885a6f5f04a52b3bd2c6a942727038f3
                   </span>
                 </div>
                 
