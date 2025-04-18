@@ -1,4 +1,4 @@
-    .navbar {
+.navbar {
   height: 71px;
   display: flex;
   justify-content: space-between;
@@ -448,3 +448,4 @@
   .navbar.transparent .mobile-menu-button svg {
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
   }
+}
